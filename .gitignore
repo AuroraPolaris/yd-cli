@@ -1,0 +1,16 @@
+/node_modules/*
+/coverage
+/build/release/**
+/build/md5-json/
+/uploads
+/tmp
+/build/*.tar.gz
+npm-debug.log
+*.bak
+*.orig
+*_BACKUP_*
+*_LOCAL_*
+*_REMOTE_*
+*_BASE_*
+.DS_Store
+/.idea/*

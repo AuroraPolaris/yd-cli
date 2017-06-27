@@ -1,0 +1,10 @@
+head
+  title #{appname}
+  meta(charset="utf-8")
+body
+  #app
+  if debug
+    script.
+      window.$$debug = true;
+  script(src="/common/requireConfig.js")
+  script(src="/common/require.js", data-main="/main.js")

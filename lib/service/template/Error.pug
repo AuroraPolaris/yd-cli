@@ -1,0 +1,34 @@
+head
+  title Request Error
+  style.
+    .stack {
+      margin: 20px auto;
+      width: 70%;
+    }
+    .block{
+      background-color: #ddd;
+      padding: 15px;
+    }
+    .list{
+      white-space: pre-wrap;
+      line-height: 22px;
+    }
+    .errorText{
+      white-space: pre-wrap;
+      background-color: #A00; 
+      line-height: 22px;
+      color: white;
+    }
+    
+body
+  .stack
+    h1 Request Error!
+    h4 Url
+    p.block [#{method}] #{url}
+    if postBody
+      h4 PostBody
+      pre.block !{postBody}
+    h4 Error
+    pre.errorText.block #{errorText}
+    h4 Stack
+    pre.list.block #{stack}
