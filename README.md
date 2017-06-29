@@ -1,3 +1,7 @@
 # how to use
-### 
-`npm install yd-cli`
+### install
+`npm install -g yd-cli`
+
+### build
+`yd-cli ${projectName}`
+
