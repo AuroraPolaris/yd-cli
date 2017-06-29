@@ -1,0 +1,16 @@
+#!/bin/bash
+SHELL_FILE_PATH=$(cd `dirname $0`; pwd)
+PROJECT_NAME=$1
+
+#echo $PWD
+cp -r $SHELL_FILE_PATH/../demo/* $PWD
+#cp $SHELL_FILE_PATH/../demo/package.json $PWD
+#cp $SHELL_FILE_PATH/../demo/processes.json $PWD
+
+echo $PROJECT_NAME
+sed "s/{{PROJECT_NAME}}/$PROJECT_NAME/g" $PWD/package.json > temp.json
+mv temp.json package.json
+
+sed "s/{{PROJECT_NAME}}/$PROJECT_NAME/g" $PWD/processes.json > temp.json
+mv temp.json processes.json
+npm install

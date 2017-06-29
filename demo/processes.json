@@ -1,12 +1,12 @@
 {
   "apps": [{
-    "name"        : "for-cli",
+    "name"        : "{{PROJECT_NAME}}",
     "script"      : "lib/service/index.js",
     "watch"       : true,
     "ignore_watch" : ["node_modules", "client", "bin", "build", "lib/loader-service"],
     "max_memory_restart": "1G"
   }, {
-    "name"        : "for-cli-dev-server",
+    "name"        : "{{PROJECT_NAME}}-dev-server",
     "script"      : "lib/loader-service/index.js",
     "watch"       : true,
     "ignore_watch" : ["node_modules", "client", "bin", "build", "lib/service"],
