@@ -19,7 +19,7 @@
   "scripts": {
     "ci-test": "npm run ci-make; npm run ci-start; npm run test",
     "ci-make": "rm -rf demo; ./bin/yd-cli demo",
-    "ci-start": "cd demo; pm2 start processes.json --env dev; cd..",
+    "ci-start": "cd demo; pm2 start processes.json --env dev; cd ..",
     "test": "mocha --delay test/start.js"
   },
   "repository": {
