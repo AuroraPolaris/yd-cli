@@ -14,7 +14,6 @@
   "devDependencies": {
     "chai": "^4.0.2",
     "mocha": "^3.4.2",
-    "pm2": "^2.5.0",
     "request": "^2.81.0"
   },
   "scripts": {

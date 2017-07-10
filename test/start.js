@@ -6,7 +6,7 @@ describe('Static File', function() {
   describe('index', function() {
     it('index page should be render', function(done) {
       request(DOMAIN, function (err, response, body) {
-        expect(body).to.include('<title>$PROJECT_NAME-dev</title>');
+        expect(body).to.include('<title>demo-dev</title>');
         done();
       })
     });
