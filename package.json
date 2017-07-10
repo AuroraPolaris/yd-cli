@@ -17,7 +17,7 @@
     "request": "^2.81.0"
   },
   "scripts": {
-    "make": "rm -rf demo; yd-cli demo",
+    "make": "rm -rf demo; ./bin/yd-cli demo",
     "test": "npm run make; cd demo; npm run dev; cd ..; mocha --delay test/start.js",
     "test2": "mocha --delay test/start.js"
   },
