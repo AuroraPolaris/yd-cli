@@ -14,12 +14,13 @@
   "devDependencies": {
     "chai": "^4.0.2",
     "mocha": "^3.4.2",
+    "pm2": "^2.5.0",
     "request": "^2.81.0"
   },
   "scripts": {
     "ci-test": "npm run ci-make; npm run ci-start; npm run test",
     "ci-make": "rm -rf demo; ./bin/yd-cli demo",
-    "ci-start": "cd demo;node lib/service/index.js; node lib/loader-service/index.js; cd..",
+    "ci-start": "cd demo; pm2 start processes.json --env dev; cd..",
     "test": "mocha --delay test/start.js"
   },
   "repository": {
