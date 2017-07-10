@@ -4,6 +4,7 @@
 /build/md5-json/
 /uploads
 /tmp
+/demo
 /build/*.tar.gz
 npm-debug.log
 *.bak

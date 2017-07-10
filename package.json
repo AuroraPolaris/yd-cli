@@ -11,9 +11,14 @@
     "colors": "^1.1.2",
     "download-git-repo": "^1.0.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2",
+    "request": "^2.81.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "yd-cli demo; cd demo; npm run dev; cd ..; mocha test/start.js",
+    "test2": "mocha test/start.js"
   },
   "repository": {
     "type": "git",
