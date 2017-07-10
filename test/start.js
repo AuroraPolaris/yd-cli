@@ -75,6 +75,7 @@ describe('Restful Api', function() {
   describe('users', function() {
     it('/users/api should return World', function(done) {
       request(DOMAIN + '/api/users', function (err, response, body) {
+        console.log(body)
         body = JSON.parse(body);
         expect(body.status).to.equal('success');
         expect(body.result).to.equal('World');
@@ -83,3 +84,7 @@ describe('Restful Api', function() {
     });
   });
 });
+
+setTimeout(function () {
+  run()
+}, 2000)

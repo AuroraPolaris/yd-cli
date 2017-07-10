@@ -17,8 +17,9 @@
     "request": "^2.81.0"
   },
   "scripts": {
-    "test": "yd-cli demo; cd demo; npm run dev; cd ..; mocha test/start.js",
-    "test2": "mocha test/start.js"
+    "make": "rm -rf demo; yd-cli demo",
+    "test": "npm run make; cd demo; npm run dev; cd ..; mocha --delay test/start.js",
+    "test2": "mocha --delay test/start.js"
   },
   "repository": {
     "type": "git",
